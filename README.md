@@ -3,6 +3,9 @@
 Following tutorial
 [here](http://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html)
 
+Continue
+[here](http://elixir-lang.org/getting-started/mix-otp/genserver.html)
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
