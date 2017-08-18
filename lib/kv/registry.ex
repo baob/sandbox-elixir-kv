@@ -16,6 +16,9 @@ defmodule KV.Registry do
   def lookup(server, name) do
     GenServer.call(server, {:lookup, name})
   end
+  def lookup_all(server) do
+    GenServer.call(server, {:lookup_all})
+  end
 
   @doc """
   Ensures there is a bucket called 'name' on 'server'
@@ -34,6 +37,10 @@ defmodule KV.Registry do
 
   def handle_call({:lookup, name}, _from, {names, _} = state ) do
     {:reply, Map.fetch(names, name), state}
+  end
+
+  def handle_call({:lookup_all}, _from, {names, _} = state ) do
+    {:reply, state, state}
   end
 
   def handle_cast({:create, name}, {names, refs}) do
