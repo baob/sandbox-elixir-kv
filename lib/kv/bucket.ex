@@ -1,4 +1,5 @@
 defmodule KV.Bucket do
+  use Agent
 
   @doc """
   Starts a new bucket
