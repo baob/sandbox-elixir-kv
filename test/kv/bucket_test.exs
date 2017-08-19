@@ -2,7 +2,7 @@ defmodule KV.BucketTest do
   use ExUnit.Case, async: true
 
   setup do
-    {:ok, bucket} = KV.Bucket.start_link
+    {:ok, bucket} = KV.Bucket.start_link([])
     {:ok, bucket: bucket}
   end
 
@@ -19,5 +19,4 @@ defmodule KV.BucketTest do
     assert KV.Bucket.delete(bucket, "beer") == 5
     assert KV.Bucket.get(bucket, "beer") == nil
   end
-
 end
