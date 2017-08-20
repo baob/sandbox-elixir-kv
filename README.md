@@ -4,7 +4,7 @@ Following tutorial
 [here](http://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html)
 
 Continue
-[here](https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html#understanding-applications)
+[here](https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html#supervision-trees)
 
 ## Installation
 
